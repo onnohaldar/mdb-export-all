@@ -4,7 +4,9 @@
   "description": "export all ms access tables to .csv",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:mdb:export:all": "docker build -f build.dockerfile -t dgwnu:mdb-export-all .",
+    "rmi:mdb:export:all": "docker rmi dgwnu:mdb-export-all -f"
   },
   "repository": {
     "type": "git",
