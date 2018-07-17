@@ -16,7 +16,7 @@ filename=$(basename "$fullfilename")
 dbname=${filename%.*}
 fulldbname=${fullfilename%.*}
 
-mkdir "$dbname"
+mkdir -p "$fulldbname"
 
 for table in $(mdb-tables "$fullfilename"); do
     echo "Export table $table"
